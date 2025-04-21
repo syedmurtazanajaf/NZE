@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefcf7;
+    
+}
+
+nav {
+    background-color: #fefcf7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.95rem;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.get-started {
+    background-color: #d4bfa9;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.get-started:hover {
+    background-color: #c5ac96;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger div {
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Mobile Dropdown */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fefcf7;
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.mobile-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 768px) {
+
+    .nav-links,
+    .social-icons,
+    .get-started {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+}
+
+/* nabar end */
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
