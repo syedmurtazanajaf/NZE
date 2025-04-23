@@ -3,6 +3,8 @@ function toggleMenu() {
     menu.classList.toggle("show");
 }
 
+// navbar end
+
 
 const track = document.querySelector('.carousel-track');
     const slides = document.querySelectorAll('.carousel-slide');
@@ -15,3 +17,7 @@ const track = document.querySelector('.carousel-track');
     }
 
     setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+    // carousel end
+
+    
