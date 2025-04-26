@@ -10,6 +10,7 @@ body {
 
 }
 
+
 nav {
     background-color: #fefcf7;
     display: flex;
@@ -392,3 +393,350 @@ nav {
       margin: 10px auto;
     }
   }
+
+
+
+  /* About file start */
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .image-grid img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    .image-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  /* image section end */
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+  }
+  .hero-left, .hero-right {
+    flex: 1 1 45%;
+  }
+  .hero-left h1 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .hero-right p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .hero-left, .hero-right {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+    .hero-left h1 {
+      font-size: 36px;
+    }
+    .hero-right p {
+      font-size: 16px;
+    }
+  }
+
+
+  /* <!-- hero section end --> */
+
+  .info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+  .info-box {
+    flex: 1 1 30%;
+    min-width: 280px;
+  }
+  .info-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .info-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .info-box {
+      flex: 1 1 100%;
+      max-width: 500px;
+    }
+  }
+
+/* Services Banner Section */
+.services-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0 0;
+    position: relative;
+    width: 100%;
+    background: none;
+    z-index: 1;
+}
+
+.services-banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+    background: #d4bfa9;
+    padding: 0.5em 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    line-height: 1.1;
+}
+
+.services-banner-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .services-banner h1 {
+        font-size: 7vw;
+        padding: 0.4em 1em;
+    }
+    .services-banner-img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-banner {
+        padding: 20px 0 0 0;
+    }
+    .services-banner h1 {
+        font-size: 9vw;
+        padding: 0.3em 0.5em;
+        margin-bottom: 1rem;
+    }
+    .services-banner-img {
+        max-height: 150px;
+    }
+}
+
+/* services file start */
+
+.services-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light background, optional */
+  }
+  
+  .services-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .services-banner-img {
+    width: 100%;
+    max-width: 800px; /* Image will not exceed 800px */
+    height: auto;
+    border-radius: 10px; /* Optional: smooth corners */
+    object-fit: cover;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .services-banner h1 {
+      font-size: 2.5rem;
+    }
+  
+    .services-banner {
+      padding: 30px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-banner h1 {
+      font-size: 2rem;
+    }
+  
+    .services-banner {
+      padding: 20px 10px;
+    }
+  }
+
+
+  /* services banner end */
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: start;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  }
+  
+  .services-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .main-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .main-text {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+  }
+  
+  .sub-image {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .prod-dev {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .manufacturing {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  
+  @media (max-width: 900px) {
+    .services-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    .main-text {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .main-image {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    .sub-image {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    .prod-dev {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    .manufacturing {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .services-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 10px;
+    }
+    .services-image img {
+      border-radius: 8px;
+    }
+    .main-text, .prod-dev, .manufacturing {
+      padding: 0 4px;
+    }
+  }
+
+
+  /* <!-- services container end --> */
+
+  h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .legacyImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .legacyImg img {
+    width: 100%;
+    max-width: 1000px; /* Image won't get bigger than 1000px */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 2rem;
+    }
+  
+    .legacyImg {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    .legacyImg {
+      padding: 10px;
+    }
+  }
+
+  /* Prodect file start */
+
+  
