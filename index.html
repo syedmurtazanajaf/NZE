@@ -10,9 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -69,7 +69,10 @@
         <div class="carousel-track">
             <div class="carousel-slide"><img src="./images/garment-costing.webp" alt="Slide 1"></div>
             <div class="carousel-slide"><img src="./images/types-of-garment-samples-proto.jpeg" alt="Slide 2"></div>
-            <div class="carousel-slide"><img src="./images/53cbbfb4ee2b4593d49bd5bbf5c90a9c.jpg" alt="Slide 3"></div>
+            <div class="carousel-slide"><img src="./images/360_F_750429831_rWZMIf4JkqHuboeMhmkArNAgq43uB0Sw.jpg"
+                    alt="Slide 3"></div>
+            <div class="carousel-slide"><img src="./images/ship&plane.png" alt="Slide 4"></div>
+
         </div>
     </div>
 
@@ -87,30 +90,25 @@
 
     <section class="services-section">
         <div class="services-text animate__animated" data-animate="animate__backInLeft">
-            <h2>Services</h2>
-            <p>
-                We elevate your brand with expert strategies, creative direction, and high-quality custom products.
-                From sourcing to logistics, we ensure excellence and competitive pricing with the latest industry
-                innovations.
-            </p>
-            <a href="./service.html" target="_blank"><button>Learn more</button></a>
-        </div>
+            <h2>Our Services</h2>
+            <h5>Ensuring products meet international standards and buyer specifications</h5>
+            <ul class="services-list">
+                <li><i class="fas fa-tasks"></i> <strong>Order Management:</strong> Handling all aspects of order
+                    processing from initial inquiry to final shipment</li>
+                <li><i class="fas fa-lightbulb"></i> <strong>Product Development:</strong> Assisting buyers with product
+                    design and development</li>
+                <li><i class="fas fa-shipping-fast"></i> <strong>Logistics and Shipping:</strong> ...with Efficiency and
+                    Accuracy</li>
+            </ul>
+            <div class="button-wrapper">
+                <a href="./service.html" target="_blank">
+                    <button class="services-btn">Learn more</button>
+                </a>
+            </div>
 
-        <div class="services-images">
-            <div class="service-box animate__animated" data-animate="animate__backInRight">
-                <img src="./images/brand.jpg" alt="Brand Strategy">
-                <label>Brand Strategy</label>
-            </div>
-            <div class="service-box animate__animated" data-animate="animate__backInRight">
-                <img src="./images/unsplash-image-02NEVE2fKQw.jpg" alt="Product Development">
-                <label>Product Development</label>
-            </div>
-            <div class="service-box  animate__animated" data-animate="animate__backInRight">
-                <img src="./images/apparel-manu-big_Big.png" alt="Manufacturing">
-                <label>Manufacturing</label>
-            </div>
         </div>
     </section>
+
     <!-- services cont end -->
 
     <section class="sustainability-section">
@@ -146,14 +144,16 @@
     <!-- logo-slider end -->
 
     <footer>
-        <div class="footer">
-            <div class="info">
-                <p>Your trusted partner for sourcing, compliance, engineering, merchandising, quality control, and
-                    logistics. Delivering competitive pricing, high quality, and industry innovations globally.</p>
+        <div class="footer-container">
+            <div class="footer-section info">
+                <p>
+                    Your trusted partner for sourcing, compliance, engineering, merchandising, quality control, and
+                    logistics. Delivering competitive pricing, high quality, and industry innovations globally.
+                </p>
             </div>
 
-            <div class="nav">
-                <h4>Connection</h4>
+            <div class="footer-section nav">
+                <h4>Explore</h4>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -162,8 +162,8 @@
                 </ul>
             </div>
 
-            <div class="social">
-                <h4>Social Media</h4>
+            <div class="footer-section social">
+                <h4>Connect with Us</h4>
                 <ul>
                     <li><a href="#">📸 Instagram</a></li>
                     <li><a href="#">💼 LinkedIn</a></li>
@@ -171,15 +171,16 @@
                 </ul>
             </div>
 
-            <div class="logo">
-                NZE Buying Network
+            <div class="footer-section logo">
+                <h2>NZE Buying Network</h2>
             </div>
         </div>
 
         <div class="footer-bottom">
-            All Rights Reserved by NZE Buying Network © 2024
+            <p>&copy; 2024 NZE Buying Network. All rights reserved.</p>
         </div>
     </footer>
+
 
 </body>
 <script>
