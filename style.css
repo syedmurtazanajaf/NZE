@@ -167,17 +167,16 @@ nav {
 @media (max-width: 768px) {
 
   .carousel {
-  width: 100%;
-  max-width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-}
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
 
 }
 
 /* carousel end */
-
 
 .cont1 {
   display: flex;
@@ -189,16 +188,17 @@ nav {
   background-color: #f9f9f9;
 }
 
-.cont1 p {
+.cont1 .tagline {
   font-size: 1.2rem;
   margin: 10px;
   color: #666;
+  font-weight: 500;
 }
 
-.cont1 h1 {
-  font-size: 2rem;
+.cont1 .main-text {
+  font-size: 1.8rem;
   margin: 10px 0;
-  line-height: 1;
+  line-height: 1.4;
   font-weight: 350;
 }
 
@@ -212,37 +212,46 @@ nav {
   border-radius: 100px;
   cursor: pointer;
   transition: 0.3s;
-  font-weight: 250;
+  font-weight: 400;
 }
 
 .cont1 button:hover {
   background-color: #333;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
-  .cont1 h1 {
-    font-size: 1.5rem;
+  .cont1 .main-text {
+    font-size: 1.4rem;
   }
 
   .cont1 button {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding: 10px 20px;
   }
 }
 
+/* Mobile Phones */
 @media (max-width: 480px) {
-  .cont1 h3 {
+  .cont1 .tagline {
     font-size: 1rem;
   }
 
-  .cont1 h1 {
-    font-size: 1.2rem;
+  .cont1 .main-text {
+    font-size: 1.1rem;
+    padding: 0 10px;
   }
 
   .cont1 {
-    padding: 30px 15px;
+    padding: 30px 10px;
+  }
+
+  .cont1 button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
   }
 }
+
 
 /* con1 end */
 
