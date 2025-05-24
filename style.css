@@ -414,7 +414,6 @@ nav {
   width: 100%;
   padding: 2rem 0;
   margin: 3rem 0;
-  background-color: #f8f8f8;
   display: flex;
   align-items: center;
   position: relative;
@@ -435,7 +434,7 @@ nav {
 
 .logo-track img {
   height: clamp(60px, 8vw, 100px);
-  width: auto;
+  width: 200px;
   object-fit: contain;
   transition: transform 0.3s ease;
   cursor: pointer;
